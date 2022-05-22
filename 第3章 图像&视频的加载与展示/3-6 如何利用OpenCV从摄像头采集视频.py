@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 cv2.resizeWindow('video', 640, 480)
 while True:
     # 从摄像头读取视频帧
-    cap, frame = cap.read()  # 状态值，视频帧
+    ret, frame = cap.read()  # 状态值，视频帧
     # 将视频帧在窗口显示
     cv2.imshow('video', frame)
     # 等待键盘事件
