@@ -24,8 +24,6 @@ fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 
 out = cv2.VideoWriter('./out.mp4', fourcc, 25, (int(cap.get(3)), int(cap.get(4))))
 
-
-
 while cap.isOpened():
     # 从摄像头读取视频帧
     ret, frame = cap.read()  # 状态值，视频帧
